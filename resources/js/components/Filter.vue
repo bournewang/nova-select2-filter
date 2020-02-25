@@ -1,8 +1,8 @@
 <template>
-    <div>
-        <h3 class="text-sm uppercase tracking-wide text-80 bg-30 p-3">{{ filter.name }}</h3>
+    <div id="select2-div">
+        <!-- <h3 class="text-sm uppercase tracking-wide text-80 bg-30 p-3">{{ filter.name }}</h3> -->
 
-        <div class="p-2">
+        <div class="">
             <select
                     ref="select2_filter"
                     :dusk="filter.name + '-filter-select'"
