@@ -1,11 +1,14 @@
 @import "~select2/dist/css/select2";
 
+#select2-div{
+    width: 8em;
+}
 .nova-select2-filter-wrapper {
   z-index: 99999;
 
   &.select2-container--open .select2-dropdown--below,
   &.select2-container--open .select2-dropdown--above {
-    background: #1f628e;
+    // background: #1f628e;
   }
 
   &.select2-container .select2-choice {
@@ -40,6 +43,12 @@
 
   &.select2-container *:focus {
     outline: 0px;
+  }
+
+  &.select2-container .select2-selection--single{
+      height: 32px;
+      border: 1px solid #b9cad6;
+      border-radius: 8px;
   }
 
   &.select2-container.select2-drop-above .select2-choice {
@@ -78,7 +87,7 @@
 
   .select2-search input {
     height: 26px;
-    border: 2px solid #dce4ec;
+    border: 1px solid #dce4ec;
   }
 
   .select2-container-active .select2-choice,
@@ -109,7 +118,7 @@
   }
 
   .select2-results {
-    color: #fff;
+    // color: #fff;
     padding: 0 0 0 0px;
     margin: 4px 0px 0px 0; }
   .select2-results .select2-highlighted {
@@ -147,20 +156,23 @@ Link : http://techhysahil.com
 *********************************/
 /****** Single SCSS *******/
 .select2-container--angauber-flat .select2-selection--single {
-  background: #1f628e;
-  border: 0px;
-  height: 34px; }
+  // background: #1f628e;
+  // border: 0px;
+  background: white;
+}
 .select2-container--angauber-flat .select2-selection--single .select2-selection__rendered {
-  color: #fff;
-  line-height: 34px; }
+  // color: #fff;
+  color: #7f8890;
+  line-height: 32px; }
 .select2-container--angauber-flat .select2-selection--single .select2-selection__arrow {
   height: 26px;
   position: absolute;
   top: 1px;
   right: 1px;
-  width: 20px; }
+  width: 20px;
+}
 .select2-container--angauber-flat .select2-selection--single .select2-selection__arrow b {
-  border-color: #fff transparent transparent transparent;
+  border-color: #34383c transparent transparent transparent;
   top: 60%;
   border-style: solid;
   border-width: 5px 4px 0 4px;
@@ -169,9 +181,11 @@ Link : http://techhysahil.com
   margin-left: -4px;
   margin-top: -2px;
   position: absolute;
-  width: 0; }
+  width: 0;
+}
 .select2-container--angauber-flat .select2-selection--single .select2-selection__placeholder {
-  color: #fff; }
+  // color: #fff;
+}
 .select2-container--angauber-flat .select2-selection--single .select2-selection__clear {
   cursor: pointer;
   float: right;
@@ -190,8 +204,8 @@ Link : http://techhysahil.com
   padding: 0 5px;
   width: 100%; }
 .select2-container--angauber-flat .select2-selection--multiple .select2-selection__choice {
-  background-color: #1f628e;
-  color: #fff;
+  // background-color: #1f628e;
+  // color: #fff;
   border: 1px solid #1f628e;
   border-radius: 0px;
   padding: 3px 5px;
@@ -200,7 +214,7 @@ Link : http://techhysahil.com
   margin-right: 5px;
   margin-top: 5px; }
 .select2-container--angauber-flat .select2-selection--multiple .select2-selection__choice__remove {
-  color: #2370a2;
+  // color: #2370a2;
   margin-right: 6px;
   margin-left: 6px;
   float: right; }
@@ -210,11 +224,12 @@ Link : http://techhysahil.com
 
 .select2-container--angauber-flat .select2-results__option--highlighted[aria-selected] {
   background: #2370a2 !important;
-  color: #ffffff; }
+  color: #ffffff;
+}
 
 .select2-container--angauber-flat .select2-results__option[aria-selected=true] {
-  background: #2370a2;
-  color: #fff;
+  //background: #2370a2;
+  // color: #fff;
   opacity: 0.8; }
 
 .select2-container--angauber-flat .select2-selection--single {
